@@ -169,6 +169,9 @@ void BOARD_InitPins(void)
     /* ADC_CHN0 connect to P0_7 */
     SWM_SetFixedPinSelect(SWM0, kSWM_ADC_CHN0, true);
 
+    /* SCT_OUT2 connect to P0_29 */
+    SWM_SetMovablePinSelect(SWM0, kSWM_SCT_OUT2, kSWM_PortPin_P0_29);
+
     /* Disable clock for switch matrix. */
     CLOCK_DisableClock(kCLOCK_Swm);
 }
