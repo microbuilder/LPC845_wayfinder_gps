@@ -308,9 +308,9 @@ int main(void)
 
     PRINTF("\r\nLPC845 GPS Wayfinder\r\n");
     PRINTF("\r\nWaiting for a fix on the GPS module.\r\n");
-    PRINTF("\r\nThe GREEN LED indicates that we are waiting for a fix.\r\n");
-    PRINTF("\r\nThe BLUE LED indicates that we are parsing GPS data.\r\n");
-    PRINTF("\r\nThe RED LED indicates an error like an invalid GPS data packet.\r\n");
+    PRINTF("\r\nGREEN LED : Waiting for a GPS fix.\r\n");
+    PRINTF("\r\nBLUE LED  : Parsing a GPS packet.\r\n");
+    PRINTF("\r\nRED LED   : Error (invalid GPS packet, etc).\r\n");
 
     /* Initialise the SCTimer for PWM output to the piezo buzzer. */
     sctimerClock = SCTIMER_CLK_FREQ;
